@@ -29,25 +29,26 @@ pizzabot/
 ## pizzabot-prompt.js
 This version of Pizzabot uses prompt() to interact with the user:
 - **Pizza Menu**: Defines the available pizza types (vegetarian, hawaiian, pepperoni) and sets a base price per pizza.
-- **orderPizza()**: Main function called when the "Order Pizza" button is clicked.
+- **orderPizza()**: Main function is called when the "Order Pizza" button is clicked.
 - Prompts for the pizza name and quantity.
 - Checks if the pizza name exists (case-insensitive).
 - Calculates total cost and estimated preparation time.
 - Displays an alert summarizing the order details.
-- **orderPrice()**: Calculates the total cost based on the quantity of pizzas ordered.
+- **orderPrice()**: Calculates the total cost based on the number of pizzas ordered.
 - **calculateOrderTime()**: Determines order time based on quantity:
 - 1-2 pizzas: 10 minutes
 - 3-5 pizzas: 15 minutes
 - 6 or more pizzas: 20 minutes
 ## pizzabot-get-element.js
 This version of Pizzabot uses getElementById and querySelector to interact with the user’s input on the HTML form:
-- **orderPizza()**: The main function called when the "Order Pizza" button is clicked. It:
+- **orderPizza()**: The main function is called when the "Order Pizza" button is clicked. It:
 - Retrieves the selected pizza type using querySelector and the entered quantity using getElementById.
 - Validates the quantity input to ensure it's greater than zero.
-- Calculates total cost and estimated preparation time.
+- Calculates the total cost and estimated preparation time.
 - Displays an alert summarizing the order details.
 - **orderPrice()** and **calculateOrderTime()**: These functions perform the same role as in the prompt-based version.
 # 🛠️ How to Run the Project
 1. Clone or download the repository.
 2. Open `index-prompt.html` in a web browser to see the prompt version or open `index-get-element.html` to see the getElement version.
 
+![Demo](/images/demo.png)
