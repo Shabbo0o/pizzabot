@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Pizzabot</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="section">
+            <div><h1>Welcome to Pizzabot!</h1></div>
+            <div><script src="pizzabot-get-element.js"></script></div>
+            <div class="formContainer">
+                <form action="https://httpbin.org/anything" method="post">
+                    <div class="pizzaSelection">
+                        <label for="pizzaSelection" class="choosPizza">Choose your pizza</label><br> 
+                        <input type="radio" id="vegeterian" name="pizzaSelection" value="Vegetarian" checked="">
+                        <label for="vegeterian">Vegetarian</label><br>
+                        <input type="radio" id="hawaiian" name="pizzaSelection" value="Hawaiian">
+                        <label for="hawaiian">Hawaiian</label><br>
+                        <input type="radio" id="pepperoni" name="pizzaSelection" value="Pepperoni">
+                        <label for="pepperoni">Pepperoni</label>
+                    </div>
+                    <div class="pizzaQuantity">
+                        <label for="pizzaQuantity">Number of Pizza</label>
+                        <input id="pizzaQuantity" name="pizzaQuantity" type="number" value="1" required />
+                    </div>
+                    <div>
+                        <button type="submit" class="button" onclick="orderPizza()">Order Pizza</button>
+                        <button type="cancel" class="button">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
